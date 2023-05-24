@@ -41,6 +41,21 @@ namespace Basic
                 Console.WriteLine("Error: Division by zero is not allowed.");
             }
 
+            Console.WriteLine("Enter the number multiplied:");
+            double multiplied = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Enter the multiple:");
+            double multiple = Convert.ToDouble(Console.ReadLine());
+
+            if (multiple != 0)
+            {
+                double result = multiplied * multiple;
+                Console.WriteLine("The result of multiple is: " + result);
+            }
+            else
+            {
+                Console.WriteLine("Error: Multiply by zero is not allowed.");
+            }
         }
     }
 }
