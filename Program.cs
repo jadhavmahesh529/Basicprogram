@@ -25,6 +25,21 @@ namespace Basic
             int difference = no1 - no2;
             Console.WriteLine("The difference of {0} and {1} is: {2}", no1, no2, difference);
 
+            Console.WriteLine("Enter the dividend:");
+            double dividend = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Enter the divisor:");
+            double divisor = Convert.ToDouble(Console.ReadLine());
+
+            if (divisor != 0)
+            {
+                double result = dividend / divisor;
+                Console.WriteLine("The result of division is: " + result);
+            }
+            else
+            {
+                Console.WriteLine("Error: Division by zero is not allowed.");
+            }
 
         }
     }
